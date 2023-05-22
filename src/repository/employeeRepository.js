@@ -24,7 +24,7 @@ class EmployeeRepository {
            
         } catch (error) {
             console.log("Something went wrong on repository layer");
-            throw error;
+            throw {error};
         }
     }
 
@@ -39,7 +39,7 @@ class EmployeeRepository {
             return true;
         } catch (error) {
             console.log("Something went wrong on repository layer");
-            throw error;
+            throw {error};
         }
     }
 
@@ -50,7 +50,7 @@ class EmployeeRepository {
             return updatedEmployee;
         } catch (error) {
             console.log("Something went wrong on repository layer");
-            throw error;
+            throw {error};
         }
     }
     async findById(Id) {
@@ -61,7 +61,7 @@ class EmployeeRepository {
             return employee;
         } catch (error) {
             console.log("Something went wrong on repository layer");
-            throw error;
+            throw {error};
         }
     }
 

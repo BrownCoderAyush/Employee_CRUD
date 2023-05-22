@@ -9,7 +9,7 @@ class EmergencyCRepository {
             return employeeContact;
         } catch (error) {
             console.log("Something went wrong on repository layer");
-            throw error;
+            throw {error};
         }
     }
 
@@ -24,7 +24,7 @@ class EmergencyCRepository {
             return true;
         } catch (error) {
             console.log("Something went wrong on repository layer");
-            throw error;
+            throw {error};
         }
     }
     async bulkCreate(data){
@@ -33,7 +33,7 @@ class EmergencyCRepository {
             return emergencyContacts;
         } catch (error) {
             console.log("Something went wrong on repository layer");
-            throw error;
+            throw {error};
         }
     }
 
@@ -43,7 +43,7 @@ class EmergencyCRepository {
             return employeeContact;
         } catch (error) {
             console.log("Something went wrong on repository layer");
-            throw error;
+            throw {error};
         }
     }
 }
