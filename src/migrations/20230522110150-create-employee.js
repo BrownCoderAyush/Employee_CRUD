@@ -10,25 +10,33 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING , 
+        required : true 
       },
       jobTitle: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING , 
+        required : true
       },
       email: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING , 
+        required : true , 
+        unique : true 
       },
       phoneNumber: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BIGINT ,
+        required : true 
       },
       address: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING ,
+        required : true 
       },
       city: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING , 
+        required : true 
       },
       state: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING , 
+        required : true 
       },
       createdAt: {
         allowNull: false,

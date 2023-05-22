@@ -16,7 +16,7 @@ module.exports = {
         type: Sequelize.ENUM('primary', 'secondary')
       },
       phoneNumber: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BIGINT
       },
       relationship: {
         type: Sequelize.STRING
